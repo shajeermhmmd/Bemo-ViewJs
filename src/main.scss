@@ -1,0 +1,505 @@
+$Bemo-theme: #f7f5f5;
+$Bemo-menu: #fff;
+$Bemo-text: #fff;
+$Bemo-bg: #586aea;
+$Bemo-header: #adb7fb;
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+svg {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  vertical-align: baseline;
+  line-height: 1.5;
+  // -moz-transition: 0.5s;
+  // -webkit-transition: 0.5s;
+  // transition: 0.5s;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  background: $Bemo-theme;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.baguetteBox-button:focus,
+.baguetteBox-button:hover,
+.glen-rooms .owl-carousel .owl-nav button {
+  outline: none;
+}
+
+/* reset file */
+
+.clear {
+  clear: both !important;
+}
+
+button {
+  outline: none !important;
+  cursor: pointer;
+
+  &:focus {
+    outline: none !important;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.no-gutter {
+  padding: 0;
+  margin: 0;
+}
+
+/* Scroller */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0b6735;
+  box-shadow: inset 0 0 5px grey;
+}
+
+.sidePannelMain {
+  background: $Bemo-menu;
+  position: fixed;
+  top: 0;
+  width: 70px;
+  z-index: 10000;
+  height: 100%;
+  -webkit-box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+
+  h2 {
+    color: $Bemo-text;
+    background: $Bemo-bg;
+    padding: 7px;
+    text-transform: uppercase;
+  }
+}
+
+.headerMainall {
+  background: $Bemo-header;
+  height: 38px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 1000;
+  padding-left: 82px;
+  -webkit-box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+}
+
+.mainTxtContent {
+  padding-left: 86px;
+  padding-right: 30px;
+  position: relative;
+
+  .cardMainAll {
+    height: 100%;
+    padding: 6px 10px 10px;
+    background: #f7f8fc;
+
+    .card {
+      border-radius: 5px;
+      background: #fff;
+      margin-bottom: 5px;
+      padding: 10px;
+      border: 1px #ddd solid;
+    }
+    .no-cards{
+      font-size: 12px;
+    }
+  }
+
+  .headerMain1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #f7f8fc;
+    padding: 6px 3px 5px 12px;
+
+    h3 {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 0px;
+      text-transform: capitalize;
+    }
+
+    button {
+      margin: 0 3px;
+      border: none;
+      color: #fff;
+      border-radius: 3px;
+    }
+
+    .deleteBtn {
+      background: #ff6767;
+    }
+
+    .editBtn {
+      background: #586aea;
+    }
+  }
+
+  .headerMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .addColumn {
+    border: none;
+    background: none;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cardBorderMain {
+    background-color: $Bemo-menu;
+    height: 100%;
+  }
+
+  .addBtnmain {
+    position: absolute;
+    background: $Bemo-bg;
+    border: none;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.4s;
+
+    &:hover {
+      background: $Bemo-header;
+    }
+  }
+
+  ul {
+    display: flex;
+    margin-right: -17px;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    li {
+      width: 16%;
+      margin-right: 6px;
+      border-top: 3px $Bemo-header solid !important;
+      padding-bottom: 52px;
+      margin-bottom: 10px;
+      background: #fff;
+      position: relative;
+      border-radius: 7px;
+      display: inline-block;
+      overflow: hidden;
+      transition: 0.4s;
+      border: 1px #ddd solid;
+
+      &:hover {
+        border-top: 3px $Bemo-bg solid !important;
+        box-shadow: -5px 1px 32px -9px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}
+
+.exportDb {
+  background: #fa0041;
+  padding: 10px;
+  color: #fff;
+  width: 114px;
+  border-radius: 30px;
+  border: none;
+  float: left;
+  margin-top: 18px;
+  font-weight: 700;
+  transition: 0.4s;
+
+  &:hover {
+    background: #333;
+  }
+}
+
+.modalMain {
+  .vm--modal {
+    padding: 20px;
+    text-align: left;
+    width: 300px !important;
+    left: 50% !important;
+    margin-left: -150px !important;
+    height: auto !important;
+    h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .textInputWrapper {
+      position: relative;
+      border: 1px #ddd solid;
+      border-radius: 0px;
+      background: none;
+      .textInputWrapperPos {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+
+        button {
+          height: 100%;
+          color: #fff;
+          background: #586aea;
+          transition: 0.4s;
+          border: 1px #586aea solid;
+          width: 60px;
+          border: none;
+          &:hover {
+            background: #333;
+          }
+         
+        }
+      }
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      background: none;
+    }
+  }
+}
+
+.card-model {
+  .vm--modal {
+    padding: 20px;
+    text-align: left;
+    width: 300px !important;
+    left: 50% !important;
+    margin-left: -150px !important;
+    height: auto !important;
+    h4 {
+      font-size: 25px;
+      margin-bottom: 8px;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    button {
+      color: #fff;
+      background: #586aea;
+      transition: 0.4s;
+      border: 1px #586aea solid;
+      width: 100px;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      &:hover {
+        background: #333;
+      }
+      margin:auto;
+      display:block;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    input {
+      display: block;
+      width: 90%;
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px #ddd solid;
+      background: none;
+      margin-bottom: 10px;
+    }
+
+    .closeBtn {
+      position: absolute;
+      right: 17px;
+      top: 0;
+      width: 10px;
+      background: none;
+      color: #333;
+      font-size: 25px;
+      &:hover {
+        background: none !important;
+      }
+    }
+
+    .card-details {
+      width: 100%;
+      border: 1px #ddd solid;
+      border-radius: 5px;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+}
